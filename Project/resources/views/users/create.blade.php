@@ -5,7 +5,7 @@
 	<div class="row page-title-row">
 		<div class="col-md-12">
 			<h3>
-				User <small>&raquo; Add New Student</small>
+				User <small>&raquo; Add New Users</small>
 			</h3>
 
 		</div>
@@ -15,7 +15,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">
-						Student Form
+						User Form
 					</h3>
 				</div>
 				@if ($errors->any())
@@ -68,7 +68,7 @@
 											<button type="submit" class="btn btn-primary btn-lg">
 												<i class="fa fa-disk-o">													
 												</i>
-												Save New Student
+												Save New User
 											</button>
 										</div>
 									</div>

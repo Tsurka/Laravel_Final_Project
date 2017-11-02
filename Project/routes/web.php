@@ -23,8 +23,10 @@ Route::get('/user', 'UserController@index');
 
 Auth::routes();
 
-Route::resource('order', 'OrderController');
-Route::get('order', 'OrderController@index')->name('order');
+Route::resource('bg', 'BgController');
+Route::resource('it', 'BgController');
+Route::resource('fish', 'FishController');
+
 
 Route::resource('user', 'UserController');
 Route::resource('meal_types', 'Meal_typesController');
@@ -52,5 +54,9 @@ Route::get('user/{$id}/edit', 'UserController@edit')->name('edit_user_info');
 Route::get('/restaurant', 'RestaurantController@index')->name('restaurant');
 // Route::get('user', 'UserController@index')->name('get_all_users');
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('protected', ['middleware' => ['auth', 'admin'], function() {
+    return "This page requires that you be logged in and an Admin";
+}]);
 
 

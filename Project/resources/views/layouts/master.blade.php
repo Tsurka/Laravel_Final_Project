@@ -6,8 +6,7 @@
 		@yield('title')
 	</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<!-- <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}"> -->
-
+     <link href="{{ URL::asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
 	@yield('style')
 </head>
 <body>	

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time:  1 ное 2017 в 14:05
+-- Generation Time:  2 ное 2017 в 14:53
 -- Версия на сървъра: 10.1.21-MariaDB
 -- PHP Version: 7.1.1
 
@@ -145,7 +145,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`, `role`) VALUES
-(2, 'Tsurka88', 'Tsurka88@abv.bg', '$2y$10$7hlTsYoBwlSrkCxujcoTTOXDYMYe6JuWL2mScFD8pj5lawF8iHyda', '5bCIgpmt3JUKFvToX0xcCgL7YQG4Blo05ifA4ksAgpVk8YLNS6ndwkKkfIjo', '2017-10-28 12:47:54', '2017-10-28 12:47:54', 'client');
+(2, 'Tsurka88', 'Tsurka88@abv.bg', '$2y$10$7hlTsYoBwlSrkCxujcoTTOXDYMYe6JuWL2mScFD8pj5lawF8iHyda', 's5sdiUg0dQn94LMfkkjGhvpwN5C58tGuD1hD07UwLrs7xbZISbJqlHkbvNFo', '2017-10-28 12:47:54', '2017-10-28 12:47:54', 'client'),
+(4, 'Tsurka15', 'Tsurka15@abv.bg', '$2y$10$8cNMBFhaUCbR8axtNZzrHuU3TjWaT2PuQyx3ZrPzhHy3ARDX/n1sW', 'CJFUd3Lu15tTD2wpgh8QoCERCbkV8SSpXwZOP78bwTckwNUKY2BThwjlECuW', '2017-11-02 07:51:44', '2017-11-02 07:51:44', 'admin');
 
 --
 -- Indexes for dumped tables
@@ -203,7 +204,7 @@ ALTER TABLE `meals`
 -- AUTO_INCREMENT for table `meal_types`
 --
 ALTER TABLE `meal_types`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `restaurants`
 --
@@ -213,7 +214,7 @@ ALTER TABLE `restaurants`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- Ограничения за дъмпнати таблици
 --

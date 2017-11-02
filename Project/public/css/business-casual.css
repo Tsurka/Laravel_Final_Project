@@ -64,3 +64,18 @@ hr.divider {
 .map-container iframe.clicked {
   pointer-events: auto;
 }
+.nav-link {
+  font-size:16px!important;
+}
+.tagline-upper {
+   font-size:80px;
+}
+.tagline-lower {
+  font-size:20px;
+}
+.panel-heading {
+  font-size: 20px;
+}
+.panel-body {
+  font-size:15px;
+}

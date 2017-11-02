@@ -5,7 +5,7 @@
 	<div class="row page-title-row">
 		<div class="col-md-12">
 			<h3>
-				User <small>&raquo; Edit Student</small>
+				User <small>&raquo; Edit User</small>
 			</h3>
 
 		</div>
@@ -15,7 +15,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">
-						Student Form
+						User Form
 					</h3>
 					@if ($errors->any())
 					<div class="alert alert-danger">
@@ -66,7 +66,7 @@
 											<button type="submit" class="btn btn-primary btn-lg">
 												<i class="fa fa-disk-o">													
 												</i>
-												Edit Student
+												Edit User
 											</button>
 										</div>
 									</div>

@@ -14,7 +14,7 @@
 <!-- var 1 Using Eloquent -->
 {{ var_dump($meal_type->meal_type) }}
 <!-- var2 -->
-@foreach($meals_types as $meal_type)
+@foreach($meal_types as $meal_type)
 {{ $meal_type->meal_type }}
 @endforeach
 
