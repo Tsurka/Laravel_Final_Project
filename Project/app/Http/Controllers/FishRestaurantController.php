@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Meal;
 
-class BGRestaurantController extends Controller
+class FishRestaurantController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,10 +15,10 @@ class BGRestaurantController extends Controller
     public function index()
     {
 
-    $meals = Meal::get()->where('restaurant_id', '=', '1');
+    $meals = Meal::get()->where('restaurant_id', '=', '3');
     // dd($meals);
-    return view('bg', ['meals' => $meals]); 
-    
+    return view('fish', ['meals' => $meals]); 
+
     }
 
     /**

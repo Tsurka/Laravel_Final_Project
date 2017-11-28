@@ -20,6 +20,8 @@ Route::get('/contacts', 'ContactsController@index');
 Route::get('/contacts', 'ContactsController@index')->name('contacts');
 Route::get('/user', 'UserController@index');
 
+Route::post('/order', 'OrderController@order')->name('make_order');
+
 
 Auth::routes();
 
@@ -31,7 +33,11 @@ Route::resource('fish', 'FishController');
 Route::resource('user', 'UserController');
 Route::resource('meal_types', 'Meal_typesController');
 Route::resource('bg', 'BGRestaurantController');
+Route::resource('it', 'ITRestaurantController');
+Route::resource('fish', 'FishRestaurantController');
 Route::get('bg', 'BGRestaurantController@index');
+Route::get('it', 'ITRestaurantController@index');
+Route::get('fish', 'FishRestaurantController@index');
 Route::get('user/create', 'UserController@create')->name('add_new_user');
 Route::get('user', 'UserController@index')->name('get_all_users');
 
