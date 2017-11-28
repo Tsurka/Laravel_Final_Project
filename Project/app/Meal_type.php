@@ -3,7 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Meals;
+use App\Meal;
 
 class Meal_type extends Model
 {
@@ -15,8 +15,8 @@ class Meal_type extends Model
     public $incrementing 	= false;
     // protected $primaryKey 	= ['id'];
 
-    public function meals() 
+    public function meal() 
     {
-    	return $this->belongsTo('App\Meals');
+    	return $this->belongsTo('App\Meal');
     } 
 }

@@ -34,10 +34,10 @@
 						Мeal Name
 					</td>
 					<td>
-						Edit Student
+						Edit Meal
 					</td>
 					<td>
-						Delete Student
+						Delete Meal
 					</td>
 				</tr>
 				@foreach($meal_types as $meal_type)

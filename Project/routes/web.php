@@ -24,12 +24,14 @@ Route::get('/user', 'UserController@index');
 Auth::routes();
 
 Route::resource('bg', 'BgController');
-Route::resource('it', 'BgController');
+Route::resource('it', 'ItController');
 Route::resource('fish', 'FishController');
 
 
 Route::resource('user', 'UserController');
 Route::resource('meal_types', 'Meal_typesController');
+Route::resource('bg', 'BGRestaurantController');
+Route::get('bg', 'BGRestaurantController@index');
 Route::get('user/create', 'UserController@create')->name('add_new_user');
 Route::get('user', 'UserController@index')->name('get_all_users');
 
